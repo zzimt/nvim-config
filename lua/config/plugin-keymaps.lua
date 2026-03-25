@@ -53,3 +53,9 @@ vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle termin
 vim.keymap.set("n", "<leader>tc", "<cmd>TermNew<CR>", { desc = "Create new terminal" })
 vim.keymap.set("n", "<leader>ts", "<cmd>TermSelect<CR>", { desc = "Select terminal" })
 vim.keymap.set("n", "<leader>tn", "<cmd>ToggleTermSetName<CR>", { desc = "Set terminal name" })
+
+-- ufo
+vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds)
+vim.keymap.set("n", "zm", require("ufo").closeFoldsWith)
