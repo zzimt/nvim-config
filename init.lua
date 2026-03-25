@@ -1,0 +1,5 @@
+require("config.keymaps")
+require("config.options")
+require("config.mini-deps")
+require("plugins")
+require("config.plugin-keymaps")
