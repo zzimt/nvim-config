@@ -1,4 +1,4 @@
-require("plugins.colorschemes.onedark")
+require("plugins.colorschemes.gruvbox")
 
 require("plugins.dressing")
 require("plugins.lsp-config")
