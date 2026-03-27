@@ -8,6 +8,12 @@ MiniDeps.add({
 require("nvim-tree").setup({
 	diagnostics = {
 		enable = true,
+		icons = {
+			hint = " ",
+			info = " ",
+			warning = " ",
+			error = " ",
+		},
 	},
 	sync_root_with_cwd = true,
 	filters = {
