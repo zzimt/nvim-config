@@ -19,6 +19,11 @@ require("nvim-tree").setup({
 	filters = {
 		git_ignored = false,
 	},
+	actions = {
+		open_file = {
+			resize_window = false,
+		},
+	},
 })
 
 local nt_api = require("nvim-tree.api")
