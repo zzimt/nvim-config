@@ -34,6 +34,7 @@ vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to defini
 vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
 vim.keymap.set("n", "<leader>ga", vim.lsp.buf.code_action, { desc = "Display code actions" })
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, { desc = "Rename symbol" })
+vim.keymap.set("n", "<leader>gf", vim.diagnostic.open_float, { desc = "Line diagnostics" })
 
 -- conform
 vim.keymap.set("n", "<leader>F", require("conform").format, { desc = "Format buffer" })
