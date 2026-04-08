@@ -62,3 +62,17 @@ vim.keymap.set("n", "zR", require("ufo").openAllFolds, { desc = "Open all folds"
 vim.keymap.set("n", "zM", require("ufo").closeAllFolds, { desc = "Close all folds" })
 vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds, { desc = "Open folds except kinds" })
 vim.keymap.set("n", "zm", require("ufo").closeFoldsWith, { desc = "Close folds with" })
+
+-- luasnip
+local ls = require("luasnip")
+vim.keymap.set({ "i", "s" }, "<C-J>", function()
+	ls.jump(1)
+end, { desc = "Jump to next snippet location" })
+vim.keymap.set({ "i", "s" }, "<C-K>", function()
+	ls.jump(-1)
+end, { desc = "Jump to previous snippet location" })
+vim.keymap.set({ "i", "s" }, "<C-E>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, { desc = "Change snippet choice" })
