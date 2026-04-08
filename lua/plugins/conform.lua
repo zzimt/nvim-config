@@ -13,7 +13,7 @@ require("conform").setup({
 		cs = { "clang-format" },
 		css = { "prettierd" },
 		scss = { "prettierd" },
-		json = { "biome" },
+		json = { "prettierd" },
 		html = { "prettierd" },
 		toml = { "taplo" },
 	},
