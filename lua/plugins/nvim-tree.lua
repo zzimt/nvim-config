@@ -7,6 +7,8 @@ vim.pack.add({
 	},
 })
 
+local signs = require("diagnostic-signs")
+
 require("nvim-tree").setup({
 	modified = {
 		enable = true,
@@ -16,10 +18,10 @@ require("nvim-tree").setup({
 	diagnostics = {
 		enable = true,
 		icons = {
-			hint = " ",
-			info = " ",
-			warning = " ",
-			error = " ",
+			hint = signs.hint .. " ",
+			info = signs.info .. " ",
+			warning = signs.warning .. " ",
+			error = signs.error .. " ",
 		},
 	},
 	sync_root_with_cwd = true,

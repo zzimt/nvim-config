@@ -13,13 +13,15 @@ for _, lsp in ipairs(lsps) do
 	vim.lsp.enable(lsp)
 end
 
+local signs = require("diagnostic-signs")
+
 vim.diagnostic.config({
 	signs = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = " ",
-			[vim.diagnostic.severity.WARN] = " ",
-			[vim.diagnostic.severity.HINT] = " ",
-			[vim.diagnostic.severity.INFO] = " ",
+			[vim.diagnostic.severity.ERROR] = signs.error .. " ",
+			[vim.diagnostic.severity.WARN] = signs.warning .. " ",
+			[vim.diagnostic.severity.HINT] = signs.hint .. " ",
+			[vim.diagnostic.severity.INFO] = signs.info .. " ",
 		},
 	},
 	virtual_text = { true, prefix = "●" },
