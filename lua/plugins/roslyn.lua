@@ -1,4 +1,4 @@
-MiniDeps.add({
-	source = "seblyng/roslyn.nvim",
-})
+vim.pack.add({ {
+	src = "https://github.com/seblyng/roslyn.nvim",
+} })
 require("roslyn").setup({})

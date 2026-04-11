@@ -1,6 +1,6 @@
-MiniDeps.add({
-	source = "stevearc/dressing.nvim",
-})
+vim.pack.add({ {
+	src = "https://github.com/stevearc/dressing.nvim",
+} })
 
 require("dressing").setup({
 	input = {

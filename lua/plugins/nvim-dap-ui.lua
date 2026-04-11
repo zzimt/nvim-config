@@ -1,8 +1,12 @@
-MiniDeps.add({
-	source = "rcarriga/nvim-dap-ui",
-	depends = {
-		"mfussenegger/nvim-dap",
-		"nvim-neotest/nvim-nio",
+vim.pack.add({
+	{
+		src = "https://github.com/rcarriga/nvim-dap-ui",
+	},
+	{
+		src = "https://github.com/mfussenegger/nvim-dap",
+	},
+	{
+		src = "https://github.com/nvim-neotest/nvim-nio",
 	},
 })
 
@@ -86,4 +90,5 @@ require("dapui").setup({
 		indent = 1,
 		max_value_lines = 100,
 	},
+	wrap = false,
 })

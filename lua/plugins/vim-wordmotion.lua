@@ -1,5 +1,5 @@
 vim.g.wordmotion_prefix = ","
 
-MiniDeps.add({
-	source = "chaoren/vim-wordmotion",
-})
+vim.pack.add({ {
+	src = "https://github.com/chaoren/vim-wordmotion",
+} })

@@ -1,6 +1,6 @@
-MiniDeps.add({
-	source = "mfussenegger/nvim-dap",
-})
+vim.pack.add({ {
+	src = "https://github.com/mfussenegger/nvim-dap",
+} })
 
 local dap = require("dap")
 

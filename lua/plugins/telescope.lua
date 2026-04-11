@@ -1,14 +1,15 @@
-MiniDeps.add({
-	source = "nvim-telescope/telescope-fzf-native.nvim",
-	hooks = { post_checkout = function() end },
-})
-
-MiniDeps.add({
-	source = "nvim-telescope/telescope.nvim",
-	depends = {
-		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope-fzf-native.nvim",
-		"nvim-telescope/telescope-ui-select.nvim",
+vim.pack.add({
+	{
+		src = "https://github.com/nvim-telescope/telescope.nvim",
+	},
+	{
+		src = "https://github.com/nvim-lua/plenary.nvim",
+	},
+	{
+		src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+	},
+	{
+		src = "https://github.com/nvim-telescope/telescope-ui-select.nvim",
 	},
 })
 

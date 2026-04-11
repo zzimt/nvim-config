@@ -1,12 +1,24 @@
-MiniDeps.add({
-	source = "hrsh7th/nvim-cmp",
-	depends = {
-		"hrsh7th/cmp-nvim-lsp",
-		"saadparwaiz1/cmp_luasnip",
-		"FelipeLema/cmp-async-path",
-		"hrsh7th/cmp-nvim-lsp-signature-help",
-		"L3MON4D3/LuaSnip",
-		"onsails/lspkind.nvim",
+vim.pack.add({
+	{
+		src = "https://github.com/hrsh7th/nvim-cmp",
+	},
+	{
+		src = "https://github.com/hrsh7th/cmp-nvim-lsp",
+	},
+	{
+		src = "https://github.com/saadparwaiz1/cmp_luasnip",
+	},
+	{
+		src = "https://github.com/FelipeLema/cmp-async-path",
+	},
+	{
+		src = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help",
+	},
+	{
+		src = "https://github.com/L3MON4D3/LuaSnip",
+	},
+	{
+		src = "https://github.com/onsails/lspkind.nvim",
 	},
 })
 

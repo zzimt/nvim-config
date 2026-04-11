@@ -1,7 +1,9 @@
-MiniDeps.add({
-	source = "kevinhwang91/nvim-ufo",
-	depends = {
-		"kevinhwang91/promise-async",
+vim.pack.add({
+	{
+		src = "https://github.com/kevinhwang91/nvim-ufo",
+	},
+	{
+		src = "https://github.com/kevinhwang91/promise-async",
 	},
 })
 

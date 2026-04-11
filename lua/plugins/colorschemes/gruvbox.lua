@@ -1,6 +1,6 @@
-MiniDeps.add({
-	source = "ellisonleao/gruvbox.nvim",
-})
+vim.pack.add({ {
+	src = "https://github.com/ellisonleao/gruvbox.nvim",
+} })
 
 require("gruvbox").setup({
 	terminal_colors = false,

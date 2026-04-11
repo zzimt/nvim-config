@@ -1,3 +1,3 @@
-MiniDeps.add({
-	source = "mg979/vim-visual-multi",
-})
+vim.pack.add({ {
+	src = "https://github.com/mg979/vim-visual-multi",
+} })

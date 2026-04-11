@@ -1,6 +1,6 @@
-MiniDeps.add({
-	source = "akinsho/toggleterm.nvim",
-})
+vim.pack.add({ {
+	src = "https://github.com/akinsho/toggleterm.nvim",
+} })
 
 require("toggleterm").setup({
 	shade_terminals = false,
