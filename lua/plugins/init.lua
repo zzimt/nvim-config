@@ -1,21 +1,26 @@
-require("plugins.colorschemes.gruvbox")
+local plugins = {
+	"colorschemes.gruvbox",
+	"dressing",
+	"lsp-config",
+	"mason",
+	"luasnip",
+	"nvim-cmp",
+	"conform",
+	"lazydev",
+	"roslyn",
+	"lazygit",
+	"nvim-dap",
+	"nvim-dap-ui",
+	"nvim-tree",
+	"nvim-treesitter",
+	"telescope",
+	"toggleterm",
+	"vim-visual-multi",
+	"ufo",
+	"vim-wordmotion",
+	"vim-better-whitespace",
+}
 
-require("plugins.dressing")
-require("plugins.lsp-config")
-require("plugins.mason")
-require("plugins.luasnip")
-require("plugins.nvim-cmp")
-require("plugins.conform")
-require("plugins.lazydev")
-require("plugins.roslyn")
-require("plugins.lazygit")
-require("plugins.nvim-dap")
-require("plugins.nvim-dap-ui")
-require("plugins.nvim-tree")
-require("plugins.nvim-treesitter")
-require("plugins.telescope")
-require("plugins.toggleterm")
-require("plugins.vim-visual-multi")
-require("plugins.ufo")
-require("plugins.vim-wordmotion")
-require("plugins.vim-better-whitespace")
+for _, plugin in ipairs(plugins) do
+	require("plugins." .. plugin)
+end
