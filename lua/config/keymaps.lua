@@ -5,6 +5,4 @@ vim.keymap.set("n", "<M-k>", "<cmd>resize -1<CR>", { desc = "Decrease horizontal
 vim.keymap.set("n", "<M-l>", "<cmd>vertical resize +1<CR>", { desc = "Increase vertical window size" })
 vim.keymap.set("n", "<M-h>", "<cmd>vertical resize -1<CR>", { desc = "Decrease vertical window size" })
 
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
-
 vim.keymap.set("n", "<leader>U", vim.pack.update, { desc = "Update plugins" })
