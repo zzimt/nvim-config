@@ -32,3 +32,9 @@ require("nvim-tree").setup({
 		},
 	},
 })
+
+vim.keymap.set("n", "<leader>et", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle explorer" })
+vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus explorer" })
+vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh explorer" })
+vim.keymap.set("n", "<M-,>", "<cmd>NvimTreeResize -1<CR>", { desc = "Decrement explorer width" })
+vim.keymap.set("n", "<M-.>", "<cmd>NvimTreeResize +1<CR>", { desc = "Increment explorer width" })

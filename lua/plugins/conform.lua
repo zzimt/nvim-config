@@ -18,3 +18,5 @@ require("conform").setup({
 		toml = { "taplo" },
 	},
 })
+
+vim.keymap.set("n", "<leader>F", require("conform").format, { desc = "Format buffer" })

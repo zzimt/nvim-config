@@ -92,3 +92,6 @@ require("dapui").setup({
 	},
 	wrap = false,
 })
+
+local dapui = require("dapui")
+vim.keymap.set("n", "<leader>du", dapui.toggle, { desc = "Debugger toggle UI" })

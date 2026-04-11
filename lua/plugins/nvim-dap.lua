@@ -37,3 +37,10 @@ dap.configurations.cpp = {
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
+
+vim.keymap.set("n", "<leader>dc", "<cmd>DapContinue<CR>", { desc = "Debugger continue" })
+vim.keymap.set("n", "<leader>ds", "<cmd>DapStepOver<CR>", { desc = "Debugger step over" })
+vim.keymap.set("n", "<leader>di", "<cmd>DapStepInto<CR>", { desc = "Debugger step into" })
+vim.keymap.set("n", "<leader>do", "<cmd>DapStepOut<CR>", { desc = "Debugger step out" })
+vim.keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>", { desc = "Debugger terminate" })
+vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", { desc = "Toggle breakpoint" })
