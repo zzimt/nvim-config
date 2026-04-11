@@ -10,5 +10,15 @@
       "#endif // ${1:name}"
     ],
     "description": "C/C++ Header Guard"
+  },
+  "Struct Typedef": {
+    "prefix": ["tstruct"],
+    "body": ["typedef struct ${1:name} {", "    $0", "} ${1:name};"],
+    "description": "C Struct Typedef"
+  },
+  "Enum Typedef": {
+    "prefix": ["tenum"],
+    "body": ["typedef enum ${1:name} {", "    $0", "} ${1:name};"],
+    "description": "C Struct Typedef"
   }
 }
