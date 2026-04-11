@@ -8,6 +8,11 @@ vim.pack.add({
 })
 
 require("nvim-tree").setup({
+	modified = {
+		enable = true,
+		show_on_dirs = true,
+		show_on_open_dirs = true,
+	},
 	diagnostics = {
 		enable = true,
 		icons = {
