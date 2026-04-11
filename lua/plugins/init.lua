@@ -19,6 +19,7 @@ local plugins = {
 	"ufo",
 	"vim-wordmotion",
 	"vim-better-whitespace",
+	"lualine",
 }
 
 for _, plugin in ipairs(plugins) do
