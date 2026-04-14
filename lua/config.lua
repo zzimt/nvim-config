@@ -10,6 +10,7 @@ vim.opt.wrap = false
 vim.opt.mouse = nil
 
 vim.g.mapleader = " "
+vim.g.vim_json_warnings = false
 
 vim.keymap.set("n", "<M-j>", "<cmd>resize +1<CR>", { desc = "Increase horizontal window size" })
 vim.keymap.set("n", "<M-k>", "<cmd>resize -1<CR>", { desc = "Decrease horizontal window size" })
