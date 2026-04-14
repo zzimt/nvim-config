@@ -13,4 +13,5 @@ require("nvim-treesitter").install({
 	"lua",
 	"markdown",
 	"rust",
+	"json",
 })

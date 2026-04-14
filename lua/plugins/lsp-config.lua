@@ -7,6 +7,7 @@ local lsps = {
 	"basedpyright",
 	"clangd",
 	"lua_ls",
+	"jsonls",
 }
 
 for _, lsp in ipairs(lsps) do
