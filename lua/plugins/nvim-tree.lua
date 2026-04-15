@@ -28,11 +28,6 @@ require("nvim-tree").setup({
 	filters = {
 		git_ignored = false,
 	},
-	actions = {
-		open_file = {
-			resize_window = false,
-		},
-	},
 })
 
 vim.keymap.set("n", "<leader>et", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle explorer" })
