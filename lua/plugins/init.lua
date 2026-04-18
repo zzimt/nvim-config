@@ -1,5 +1,5 @@
 local plugins = {
-	"colorschemes.gruvbox",
+	"colorschemes.onedark",
 	"dressing",
 	"lsp-config",
 	"mason",
