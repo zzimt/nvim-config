@@ -9,7 +9,8 @@ local lsps = {
 	"lua_ls",
 	"jsonls",
 	"neocmake",
-    "ts_ls",
+	"ts_ls",
+	"gopls",
 }
 
 for _, lsp in ipairs(lsps) do
