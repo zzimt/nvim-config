@@ -45,18 +45,6 @@ cmp.setup({
 		{ name = "async_path" },
 		{ name = "nvim_lsp_signature_help" },
 	},
-	window = {
-		completion = cmp.config.window.bordered({
-			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
-			col_offset = -3,
-			side_padding = 0,
-		}),
-		documentation = cmp.config.window.bordered({
-			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
-			col_offset = 0,
-			side_padding = 0,
-		}),
-	},
 	formatting = {
 		expandable_indicator = true,
 		fields = { "icon", "abbr", "menu" },
