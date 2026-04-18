@@ -14,4 +14,8 @@ require("nvim-treesitter").install({
 	"markdown",
 	"rust",
 	"json",
+	"javascript",
+	"jsx",
+	"typescript",
+	"tsx",
 })
