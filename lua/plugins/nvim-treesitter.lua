@@ -18,6 +18,10 @@ require("nvim-treesitter").install({
 	"jsx",
 	"typescript",
 	"tsx",
+	"go",
+	"gomod",
+	"gosum",
+})
 
 vim.api.nvim_create_autocmd("FileType", {
 	callback = function(args)
