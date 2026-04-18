@@ -21,6 +21,7 @@ require("nvim-treesitter").install({
 	"go",
 	"gomod",
 	"gosum",
+	"latex",
 })
 
 vim.api.nvim_create_autocmd("FileType", {
