@@ -12,8 +12,8 @@ require("lualine").setup({
 	options = {
 		icons_enabled = true,
 		theme = "auto",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+		component_separators = { left = nil, right = nil },
+		section_separators = { left = nil, right = nil },
 		disabled_filetypes = {
 			statusline = { "NvimTree", "TelescopePrompt", "DressingInput" },
 			winbar = {},
