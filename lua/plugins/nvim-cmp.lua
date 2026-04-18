@@ -26,7 +26,7 @@ local luasnip = require("luasnip")
 local cmp = require("cmp")
 cmp.setup({
 	completion = {
-		completeopt = "menu,menuone,noinsert",
+		completeopt = "menu,menuone,noinsert,noselect",
 		menu = { border = "rounded" },
 	},
 	snippet = {
