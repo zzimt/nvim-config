@@ -1,5 +1,6 @@
 local plugins = {
 	"colorschemes.onedark",
+	"nvim-notify",
 	"dressing",
 	"lsp-config",
 	"mason",
