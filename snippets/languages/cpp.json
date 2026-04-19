@@ -11,6 +11,21 @@
     ],
     "description": "C/C++ Header Guard"
   },
+  "Extern \"C\" For C++": {
+    "prefix": ["#ifcpp"],
+    "body": [
+      "#ifdef __cplusplus",
+      "extern \"C\" {",
+      "#endif // __cplusplus",
+      "",
+      "$0",
+      "",
+      "#ifdef __cplusplus",
+      "}",
+      "#endif // __cplusplus"
+    ],
+    "description": "Extern \"C\" for C++"
+  },
   "Struct Typedef": {
     "prefix": ["tstruct"],
     "body": ["typedef struct ${1:name} {", "    $0", "} ${1:name};"],
