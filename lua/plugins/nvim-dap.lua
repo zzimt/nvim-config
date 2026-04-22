@@ -10,6 +10,12 @@ dap.adapters.cppdbg = {
 	command = "/home/daniil/Bin/cpptools/extension/debugAdapters/bin/OpenDebugAD7",
 }
 
+dap.adapters.coreclr = {
+	type = "executable",
+	command = "netcoredbg",
+	args = { "--interpreter=vscode" },
+}
+
 dap.configurations.cpp = {
 	{
 		name = "Launch file",
@@ -37,6 +43,17 @@ dap.configurations.cpp = {
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
+
+dap.configurations.cs = {
+	{
+		type = "coreclr",
+		name = "launch - netcoredbg",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to dll", vim.fn.getcwd() .. "/bin/Debug/", "file")
+		end,
+	},
+}
 
 vim.keymap.set("n", "<leader>dc", "<cmd>DapContinue<CR>", { desc = "Debugger continue" })
 vim.keymap.set("n", "<leader>ds", "<cmd>DapStepOver<CR>", { desc = "Debugger step over" })
